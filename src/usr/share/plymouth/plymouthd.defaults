@@ -1,0 +1,6 @@
+# Distribution defaults. Changes to this file will get overwritten during
+# upgrades.
+[Daemon]
+Theme=empire-start
+ShowDelay=0
+DeviceTimeout=8

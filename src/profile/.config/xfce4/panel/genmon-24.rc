@@ -1,0 +1,6 @@
+Command=/usr/bin/bash -c "~/.config/wifistatus.sh"
+UseLabel=0
+Text=(wifi)
+UpdatePeriod=2000
+Font=Hack Nerd Font Bold 11
+

@@ -1,0 +1,6 @@
+Command=/usr/bin/bash -c "~/.config/user.sh"
+UseLabel=0
+Text=(User)
+UpdatePeriod=60000
+Font=FiraCode Nerd Font Bold 11
+
