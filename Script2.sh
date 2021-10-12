@@ -34,13 +34,6 @@ neofetch > /dev/null 2>&1
 sudo apt install -y grub-customizer  > /dev/null 2>&1
 
 
-echo "[*] - Installing autoDeploy for customization of ZSH terminal..."
-
-cd autoDeploy
-chmod +x autoDeploy.sh
-sudo /bin/bash ./autoDeploy.sh --install terminal
-cd ..
-
 echo "[*] - Changing the profile configuration files..."
 cp src/profile/.face ~/.face
 cp src/profile/Pictures/* ~/Pictures
@@ -55,9 +48,11 @@ cp -r Arc-Ubuntu/ ~/.config/xfce4/Arc-Ubuntu ~/.local/share/icons > /dev/null 2>
 gtk-update-icon-cache ~/.local/share/icons/Arc-Ubuntu > /dev/null 2>&1
 
 cp src/profile/.zshrc ~/.zshrc
+cp src/profile/.p10k.zsh ~/.p10k.zsh
 sudo cp src/profile/.zshrc /root/.zshrc
 
 sudo cp src/profile/.zshrc ~/.zshrc
+sudo cp src/profile/.p10k.zsh /root/.p10k.zsh
 sudo cp src/profile/.config/neofetch/config.conf ~/.config/neofetch/
 sudo cp src/profile/.config/neofetch/CF1.txt ~/.config/neofetch/
 
@@ -73,7 +68,14 @@ sudo cp -r src/usr/share/images/* /usr/share/images/
 sudo cp -r src/usr/share/plymouth/ /usr/share/
 sudo cp /usr/share/desktop-base/kali-theme/grub/grub-4x3.png /usr/share/desktop-base/kali-theme/grub/grub-16x9.png
 sudo rm -rf /usr/share/plymouth/themes/details/kali
-sudo rm -rf /usr/share/plymouth/themes/details/Debian
+sudo cp /usr/share/grub/themes/kali/grub-4x3.png /usr/share/grub/themes/kali/background.png
+sudo cp /usr/share/grub/themes/kali/grub-4x3.png /boot/grub/themes/kali/grub-4x3
+sudo cp /usr/share/grub/themes/kali/grub-4x3.png /boot/grub/themes/kali/grub-16x9
+sudo cp /usr/share/grub/themes/kali/grub-4x3.png /boot/grub/themes/kali/background.png
+sudo rm -rf /usr/share/plymouth/themes/debian-theme/*
+sudo cd /usr/share/plymouth/themes/empire-start
+sudo cp * ../debian-theme
+sudo cp -r /usr/share/plymouth/themes/empire-start/ /usr/share/plymouth/themes/debian-theme
 sudo cp -r /usr/share/plymouth/themes/empire-start/ sudo cp -r /usr/share/plymouth/themes/debian-theme
 sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/empire-start 100
 sudo update-alternatives --config default.plymouth
