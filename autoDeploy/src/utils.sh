@@ -6,8 +6,6 @@ function installPackages(){
 	section "Updating repos..."
 	checkInternet
 	info "Downloading extra packages"
-	apt install -y neofetch > /dev/null 2>&1
-	cp -r files/neofetch $HOME_PATH/.config/
 	apt install -y $PACKAGES_LIST > /dev/null 2>&1
 	if [ $? -ne 0 ]; then
 		apt update > /dev/null 2>&1
