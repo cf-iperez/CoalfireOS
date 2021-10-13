@@ -27,6 +27,8 @@
 ```
 Scripts to make a CoalfireOS customization on your VM
 
+To prevent some bugs or issues to download some packages, put the network interface on "Bridge" mode.
+
 The first step is:
 ```
 git clone https://github.com/cf-iperez/CoalfireOS.git
