@@ -61,7 +61,8 @@ sudo ln -s ~/Pictures/CF-logo.jpg /usr/share/desktop-base/kali-theme/login/backg
 sudo cp src/profile/Pictures/CoalfireLogo.png /usr/share/desktop-base/kali-theme/login/
 sudo cp src/usr/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
 sudo chmod +x ~/.config/xfce4
-cp -r src/profile/.config/xfce4 ~/.config/xfce4
+cp -r src/profile/.config/xfce4 ~/.config/
+
 
 echo "[*] - Changing boot images..."
 sudo cp -r src/usr/share/images/* /usr/share/images/
