@@ -61,7 +61,7 @@ sudo ln -s ~/Pictures/CF-logo.jpg /usr/share/desktop-base/kali-theme/login/backg
 sudo cp src/profile/Pictures/CoalfireLogo.png /usr/share/desktop-base/kali-theme/login/
 sudo cp src/usr/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
 sudo chmod +x ~/.config/xfce4
-cp -r src/profile/.config/xfce4 ~/.config
+cp -r src/profile/.config/xfce4 ~/.config/xfce4
 
 echo "[*] - Changing boot images..."
 sudo cp -r src/usr/share/images/* /usr/share/images/
@@ -74,7 +74,7 @@ sudo cp /usr/share/grub/themes/kali/grub-4x3.png /boot/grub/themes/kali/grub-16x
 sudo cp /usr/share/grub/themes/kali/grub-4x3.png /boot/grub/themes/kali/background.png
 sudo rm -rf /usr/share/plymouth/themes/debian-theme/*
 sudo cd /usr/share/plymouth/themes/empire-start
-sudo cp * ../debian-theme
+sudo cp * ../debian-theme/
 sudo cp -r /usr/share/plymouth/themes/empire-start/ /usr/share/plymouth/themes/debian-theme
 sudo cp -r /usr/share/plymouth/themes/empire-start/ sudo cp -r /usr/share/plymouth/themes/debian-theme
 sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth default.plymouth /usr/share/plymouth/themes/empire-start 100
