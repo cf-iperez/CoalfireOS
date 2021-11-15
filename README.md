@@ -45,7 +45,7 @@ Step 3:
 ```
 ./Script1.sh
 ```
-In this step you need to put the Hostname of your Kali Linux and your username make the customization.
+In this step you need to put the Hostname of your Kali Linux and your username for making the customization.
 After install the "autoDeploy" customization for Desktop and Terminal options, you need press "Y" and reboot the system to see the changes.
 
 After reboot, log in your system and go to the CoalfireOS folder again.
