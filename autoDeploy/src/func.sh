@@ -203,7 +203,7 @@ function validations(){
 	fi
 
 ### Device Info
-    question "Hostname"
+    question "Hostname ($(awk -F: '{ print $1}' /etc/hostname))"
 	HOSTNAME=$input
 	question "Username ($(ls /home | xargs | tr ' ' ','))"
 	USERNAME=$input
