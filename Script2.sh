@@ -39,10 +39,11 @@ cp src/profile/.face ~/.face
 cp src/profile/Pictures/* ~/Pictures
 
 sudo chmod +x ~/.config/neofetch
-cp -r src/profile/.config/neofetch/ ~/.config/
+cp -r src/profile/.config/neofetch/* ~/.config/neofetch/
 sudo cp -r ~/.config/neofetch/ /root/.config/
 
 sudo cp src/profile/Pictures/Coalfire.png /usr/share/backgrounds/kali-16x9/default
+sudo cp src/profile/Pictures/Coalfire.png /usr/share/images/desktop-base/
 tar -xJf src/Arc-Ubuntu.tar.xz > /dev/null 2>&1
 cp -r Arc-Ubuntu/ ~/.config/xfce4/Arc-Ubuntu ~/.local/share/icons > /dev/null 2>&1
 gtk-update-icon-cache ~/.local/share/icons/Arc-Ubuntu > /dev/null 2>&1
@@ -62,6 +63,9 @@ sudo cp src/profile/Pictures/CoalfireLogo.png /usr/share/desktop-base/kali-theme
 sudo cp src/usr/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
 sudo chmod +x ~/.config/xfce4
 cp -r src/profile/.config/xfce4 ~/.config/
+
+cp $FILES_PATH/xfce4/xfce4-keyboard-shortcuts.xml $HOME_PATH/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml > /dev/null 2>&1
+chown -R $USERNAME:$USERNAME $HOME_PATH/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml 2>/dev/null
 
 
 echo "[*] - Changing boot images..."

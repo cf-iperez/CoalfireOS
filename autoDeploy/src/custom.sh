@@ -139,14 +139,15 @@ function customTerminal(){
 	sudo -u $USERNAME dconf write /org/mate/terminal/profiles/default/silent-bell 'true' > /dev/null 2>&1
 	sudo -u $USERNAME dconf write /org/mate/terminal/profiles/default/default-show-menubar 'false' > /dev/null 2>&1
 	sudo -u $USERNAME dconf write /org/mate/terminal/profiles/default/cursor-shape "'ibeam'" > /dev/null 2>&1
+	
 	check  "To configure mate terminal"
 
 	info "Configure Desktop"
 	cp images/Pictures/* /home/$USERNAME/Pictures/
-#	wget https://gitlab.com/kalilinux/packages/kali-wallpapers/-/raw/kali/master/2020.4/backgrounds/kali/kali-geometric-16x9.png?inline=false -O /usr/share/backgrounds/kali/kali-geometric-16x9.png > /dev/null 2>&1
-#	wget https://gitlab.com/kalilinux/packages/kali-wallpapers/-/raw/kali/master/2020.4/backgrounds/kali/kali-geometric-16x10.png?inline=false -O /usr/share/backgrounds/kali/kali-geometric-16x10.png > /dev/null 2>&1
-#	wget https://gitlab.com/kalilinux/packages/kali-wallpapers/-/raw/kali/master/2020.4/backgrounds/kali/kali-light-strips-16x10.png?inline=false -O /usr/share/backgrounds/kali/kali-light-strips-16x10.png > /dev/null 2>&1
-#	wget https://gitlab.com/kalilinux/packages/kali-wallpapers/-/raw/kali/master/2020.4/backgrounds/kali/kali-light-strips-16x9.png?inline=false -O /usr/share/backgrounds/kali/kali-light-strips-16x9.png > /dev/null 2>&1
+	wget https://github.com/cf-iperez/CoalfireOS/blob/main/src/profile/Pictures/Coalfire.png -O /usr/share/backgrounds/kali/kali-geometric-16x9.png > /dev/null 2>&1
+	wget https://github.com/cf-iperez/CoalfireOS/blob/main/src/profile/Pictures/Coalfire.png -O /usr/share/backgrounds/kali/kali-geometric-16x10.png > /dev/null 2>&1
+	wget https://github.com/cf-iperez/CoalfireOS/blob/main/src/profile/Pictures/Coalfire.png -O /usr/share/backgrounds/kali/kali-light-strips-16x10.png > /dev/null 2>&1
+	wget https://github.com/cf-iperez/CoalfireOS/blob/main/src/profile/Pictures/Coalfire.png -O /usr/share/backgrounds/kali/kali-light-strips-16x9.png > /dev/null 2>&1
 	ln -s $HOME_PATH/Pictures/Coalfire.png /usr/share/backgrounds/kali-16x9/kali-geometric-16x9.png > /dev/null 2>&1
 	ln -s $HOME_PATH/Pictures/Coalfire.png /usr/share/backgrounds/kali-16x9/kali-light-strips-16x9.png > /dev/null 2>&1
 	check "To download wallpapers"
