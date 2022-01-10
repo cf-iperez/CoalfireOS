@@ -61,9 +61,11 @@ sudo unlink /usr/share/desktop-base/kali-theme/login/background > /dev/null 2>&1
 sudo cp /usr/share/backgrounds/kali-16x9/default /usr/share/backgrounds/kali-16x9/kali-neon.png
 sudo ln -s ~/Pictures/CF-logo.jpg /usr/share/desktop-base/kali-theme/login/background
 sudo cp src/profile/Pictures/CoalfireLogo.png /usr/share/desktop-base/kali-theme/login/
+sudo cp src/profile/Pictures/CFLogoDark.png /opt/CFLogoDark.png
+sudo chmod +x /opt/CFLogoDark.png
 sudo cp src/usr/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
 sudo chmod +x ~/.config/xfce4
-cp -r src/profile/.config/xfce4 ~/.config/
+cp src/profile/.config/xfce4/panel/whiskermenu-1.rc ~/.config/xfce4/panel/whiskermenu-1.rc
 
 cp $FILES_PATH/xfce4/xfce4-keyboard-shortcuts.xml $HOME_PATH/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml > /dev/null 2>&1
 chown -R $USERNAME:$USERNAME $HOME_PATH/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml 2>/dev/null
