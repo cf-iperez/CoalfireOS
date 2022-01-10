@@ -31,6 +31,8 @@ To prevent some bugs or issues to download some packages, put the network interf
 
 The first step is:
 ```
+sudo apt update
+sudo apt upgrade
 git clone https://github.com/cf-iperez/CoalfireOS.git
 ```
 
