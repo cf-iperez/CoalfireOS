@@ -58,6 +58,7 @@ sudo cp src/profile/.config/neofetch/config.conf ~/.config/neofetch/
 sudo cp src/profile/.config/neofetch/CF1.txt ~/.config/neofetch/
 
 sudo unlink /usr/share/desktop-base/kali-theme/login/background > /dev/null 2>&1
+sudo cp /usr/share/backgrounds/kali-16x9/default /usr/share/backgrounds/kali-16x9/kali-neon.png
 sudo ln -s ~/Pictures/CF-logo.jpg /usr/share/desktop-base/kali-theme/login/background
 sudo cp src/profile/Pictures/CoalfireLogo.png /usr/share/desktop-base/kali-theme/login/
 sudo cp src/usr/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
