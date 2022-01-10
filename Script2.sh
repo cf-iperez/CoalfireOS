@@ -36,10 +36,10 @@ sudo apt install -y grub-customizer  > /dev/null 2>&1
 
 echo "[*] - Changing the profile configuration files..."
 cp src/profile/.face ~/.face
-cp src/profile/Pictures/* ~/Pictures
+cp src/profile/Pictures/* ~/Pictures/
 
 sudo chmod +x ~/.config/neofetch
-cp -r src/profile/.config/neofetch/* ~/.config/neofetch/
+cp src/profile/.config/neofetch/* ~/.config/neofetch/
 sudo cp -r ~/.config/neofetch/ /root/.config/
 
 sudo cp src/profile/Pictures/Coalfire.png /usr/share/backgrounds/kali-16x9/default
