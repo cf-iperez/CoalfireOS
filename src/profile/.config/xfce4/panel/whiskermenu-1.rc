@@ -1,6 +1,6 @@
 favorites=xfce4-terminal-emulator.desktop,xfce4-file-manager.desktop,xfce-text-editor.desktop,xfce4-web-browser.desktop,kali-www.desktop,kali-docs.desktop,kali-bugs.desktop,offsec-training.desktop,exploit-database.desktop,vulnhub.desktop,firefox-esr.desktop
 recent=bleachbit-root.desktop,org.bleachbit.BleachBit.desktop,xfce4-terminal-emulator.desktop,kali-burpsuite.desktop,xfce-ui-settings.desktop,root-terminal.desktop,qt5ct.desktop,qterminal.desktop,terminator.desktop,mate-terminal.desktop
-button-icon=/home/kali/Pictures/CoalfireLogo.png
+button-icon=/opt/CFLogoDark.png
 button-single-row=false
 show-button-title=false
 show-button-icon=true
