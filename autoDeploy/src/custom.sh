@@ -143,7 +143,7 @@ function customTerminal(){
 	check  "To configure mate terminal"
 
 	info "Configure Desktop"
-	cp images/Pictures/* /home/$USERNAME/Pictures/
+	cp images/Pictures/* $HOME/Pictures/
 	wget https://github.com/cf-iperez/CoalfireOS/blob/main/src/profile/Pictures/Coalfire.png -O /usr/share/backgrounds/kali/kali-geometric-16x9.png > /dev/null 2>&1
 	wget https://github.com/cf-iperez/CoalfireOS/blob/main/src/profile/Pictures/Coalfire.png -O /usr/share/backgrounds/kali/kali-geometric-16x10.png > /dev/null 2>&1
 	wget https://github.com/cf-iperez/CoalfireOS/blob/main/src/profile/Pictures/Coalfire.png -O /usr/share/backgrounds/kali/kali-light-strips-16x10.png > /dev/null 2>&1
